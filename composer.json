@@ -1,0 +1,47 @@
+{
+    "name": "sereny/nova-permissions",
+    "description": "Laravel Nova 4 Grouped Permissions",
+    "keywords": [ "laravel", "nova", "permission", "role" ],
+    "license": "MIT",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/serenysoft/nova-permission/issues?state=open",
+        "source": "https://github.com/serenysoft/nova-permission"
+    },
+    "authors": [
+        {
+            "name": "Leandro Guindani Gehlen",
+            "email": "leandrogehlen@gmail.com",
+            "homepage": "https://github.com/leandrogehlen"
+        }
+    ],
+    "repositories": [
+      {
+          "type": "composer",
+          "url": "https://nova.laravel.com"
+      }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/nova": "^4.0",
+        "spatie/laravel-permission": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sereny\\NovaPermissions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sereny\\NovaPermissions\\ToolServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
